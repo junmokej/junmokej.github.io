@@ -44,6 +44,8 @@ nav {
 
     .center-container {
         min-width: 200px;
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 
@@ -99,7 +101,6 @@ h4 {
     font-size: 1.6em;
     margin: 0;
     color: var(--secondary-text);
-    font-weight: 300;
     padding: 8px;
 }
 
