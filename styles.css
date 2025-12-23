@@ -1,0 +1,157 @@
+:root {
+    --background: #c9a2c9;
+    --primary-text: #F6EFF6;
+    --secondary-text: #593c59;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    background-color: var(--background);
+    color: var(--primary-text);
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    padding-left: 10%;
+    padding-right: 10%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    height: fit-content;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.navButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 250px;
+    font-size: 1.5em;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .center-container {
+        min-width: 200px;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-text);
+}
+
+.spacing-top {
+    margin-top: 20vh;
+}
+
+.pixel-art {
+    image-rendering: pixelated;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+}
+
+.selected {
+    text-decoration: line-through;
+    text-decoration-style: solid;
+    color: var(--primary-text);
+}
+
+.selected:hover {
+    text-decoration: line-through;
+    text-decoration-style: solid;
+}
+
+header h1 {
+    font-size: 8em;
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    text-align: center;
+    font-weight: 600;
+    width: 80%;
+}
+
+h3 {
+    font-size: 2em;
+    margin: 0;
+    color: var(--primary-text);
+}
+
+h4 {
+    font-size: 1.6em;
+    margin: 0;
+    color: var(--secondary-text);
+    font-weight: 300;
+    padding: 8px;
+}
+
+nav h3:hover {
+    text-decoration: underline dotted;
+}
+
+header {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    width: 70%;
+    /*filter: contrast(105%) brightness(103%) sepia(50%) grayscale(33%);*/
+    margin-top: 48px;
+    margin-bottom: 32px;
+}
+
+.bio {
+    font-size: 1.5em;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.email {
+    font-size: 1.2em;
+}
+
+.center-container {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    min-width: 400px;
+}
+
+li {
+    list-style: square;
+    list-style-position: inside;
+    padding: 8px;
+    text-align: left;
+}
+
+ul {
+    justify-content: left;
+    padding: 8px;
+    margin: 0;
+    width: fit-content;
+    justify-self: center;
+    font-size: 1.2em;
+}
