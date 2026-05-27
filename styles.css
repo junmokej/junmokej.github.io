@@ -34,6 +34,14 @@ nav {
     font-size: 1.5em;
 }
 
+.pub-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    justify-items: center;
+    place-content: center;
+}
+
 @media (max-width: 768px) {
     nav {
         flex-direction: column;
@@ -166,14 +174,6 @@ img {
     margin-right: auto;
     text-align: center;
     min-width: 400px;
-}
-
-.pub-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 24px;
-    justify-items: center;
-    place-content: center;
 }
 
 li {
