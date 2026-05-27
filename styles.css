@@ -47,6 +47,10 @@ nav {
         padding-left: 0;
         padding-right: 0;
     }
+
+    .pub-container {
+        grid-template-columns: 1fr;
+    }
 }
 
 .no-img {
@@ -169,12 +173,7 @@ img {
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
     justify-items: center;
-}
-
-@media (max-width: 768px) {
-    .pub-container {
-        grid-template-columns: 1fr;
-    }
+    place-content: center;
 }
 
 li {
