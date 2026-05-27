@@ -58,6 +58,25 @@ a {
     color: var(--primary-text);
 }
 
+.pub-card {
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    max-width: 400px;
+}
+
+.pub-card-name {
+    font-size: 1.2em;
+}
+
+.pub-card-img {
+    max-height: 100%;
+    width: auto;
+    margin: 0px 0px;
+    padding: 8px 8px;
+}
+
 .spacing-top {
     margin-top: 20vh;
 }
@@ -143,6 +162,19 @@ img {
     margin-right: auto;
     text-align: center;
     min-width: 400px;
+}
+
+.pub-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    justify-items: center;
+}
+
+@media (max-width: 768px) {
+    .pub-container {
+        grid-template-columns: 1fr;
+    }
 }
 
 li {
